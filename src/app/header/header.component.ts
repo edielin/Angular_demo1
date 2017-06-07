@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  
+  imgSrc = '/assets/images/logo.png';
+  imgTitle = 'The Will Will Web';
+  h1Title ='The Will Will Will Web';
 
   constructor() { }
 
