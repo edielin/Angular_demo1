@@ -9,8 +9,7 @@ export class AppComponent {
   title = 'app';
   keyWord = '';
 
-  clearKeyWord($event: KeyboardEvent) {
-    console.log($event);
-      this.keyWord = '';
+  updateKeyWord($event) {
+    this.keyWord = $event.target.value;
   }
 }
