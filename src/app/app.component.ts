@@ -11,8 +11,6 @@ export class AppComponent {
 
   clearKeyWord($event: KeyboardEvent) {
     console.log($event);
-    if ($event.keyCode === 27) {
       this.keyWord = '';
-    }
   }
 }
