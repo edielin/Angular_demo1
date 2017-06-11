@@ -24,11 +24,11 @@
       <div class="title-wrapper">
         <div class="container">
 
-          <img [src]="imgSrc" class="pull-left logo" [alt]="imgTitle">
+          <img (click)="changeH1Title()" [src]="imgSrc" [alt]="imgTitle" class="pull-left logo">
 
           <div class="pull-left">
             <h1><a href="http://blog.miniasp.com/">{{ h1Title }}</a></h1>
-            <h3 [innerHTML]="h3innerHTML"></h3>
+            <h3 on-click="changeH1Title()" [innerHTML]="h3innerHTML"></h3>
           </div>
 
           <div id="social-icons" class="pull-right social-icon">
