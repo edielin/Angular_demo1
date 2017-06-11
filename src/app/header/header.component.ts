@@ -16,6 +16,9 @@ export class HeaderComponent implements OnInit {
     this.count++;
   }
 
+  showHightlight() {
+    return { 'hightlight': this.count % 2 == 0 };
+  }
   constructor() { }
 
   ngOnInit() {
