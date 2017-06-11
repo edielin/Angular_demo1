@@ -24,11 +24,11 @@
       <div class="title-wrapper">
         <div class="container">
 
-          <img (click)="changeH1Title()" [src]="imgSrc" [alt]="imgTitle" class="pull-left logo">
+          <img (click)="addCount()" [src]="imgSrc" [alt]="imgTitle" class="pull-left logo">
 
           <div class="pull-left">
-            <h1><a href="http://blog.miniasp.com/">{{ h1Title }}</a></h1>
-            <h3 on-click="changeH1Title()" [innerHTML]="h3innerHTML"></h3>
+            <h1 [class.hightlight]="count % 2 == 0"><a href="http://blog.miniasp.com/">{{ h1Title }}</a></h1>
+            <h3 [style.font-size]="(count + 14) + 'px'">記載著在網路世界的學習心得與技術分享 + {{count}}</h3>
           </div>
 
           <div id="social-icons" class="pull-right social-icon">
