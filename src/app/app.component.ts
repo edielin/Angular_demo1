@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'app';
   keyWord = '';
 
-  updateKeyWord($event) {
-    this.keyWord = $event.target.value;
+  updateKeyWord(str: string) {
+    this.keyWord = str;
   }
 }
